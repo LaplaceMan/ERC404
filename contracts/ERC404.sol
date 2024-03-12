@@ -81,7 +81,7 @@ abstract contract ERC404 is IERC404 {
     }
 
     decimals = decimals_;
-    units = 10 ** decimals;
+    units = 10 ** decimals * 10000;
 
     // EIP-2612 initialization
     _INITIAL_CHAIN_ID = block.chainid;
